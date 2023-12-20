@@ -141,6 +141,8 @@ class Player(Board):
         # remplacer la couleur par l'émoji du joueur
         self.grid[self.row][self.col] = self.token
 
+        # return grid
+
     def update_score(self):
 
         self.ask_question()
@@ -148,7 +150,8 @@ class Player(Board):
         # besoin de la variable nombre_de_joueurs pour générer leurs scores respectifs
 
         for i in range(1, self.number_of_players+1):
-            self.dico_score.update({f"player {i}": self.score})
+            self.dico_score.update(
+                {f"player {i} : {self.name}, {self.token}": self.score})
 
         for i in self.dico_score:
             while len(self.dico_score[i]) < 6:

@@ -33,7 +33,7 @@ def create_table(cur):
                 incorrect_answer_2 varchar(255), 
                 incorrect_answer_3 varchar(255))
                 """
-    )
+                )
 
 
 @get_database
@@ -59,19 +59,21 @@ def update_table(cur):
     for row in df.itertuples():
 
         # Vérifie si la question existe déjà dans la table
-        cur.execute("""SELECT question FROM Questions WHERE question = ?""", (row.question,))
+        cur.execute(
+            """SELECT question FROM Questions WHERE question = ?""", (row.question,))
         result = cur.fetchall()
         if result:
             continue
-        
+
         # Sinon rajoute la question
         cur.execute("""
                     INSERT INTO 
                     Questions (category, difficulty, question, correct_answer, incorrect_answer_1, incorrect_answer_2, incorrect_answer_3)
                     VALUES (?, ?, ?, ?, ?, ?, ?)
                     """,
-                    (row.category, row.difficulty, row.question, row.correct_answer, row.incorrect_answer_1, row.incorrect_answer_2, row.incorrect_answer_3)
-        )
+                    (row.category, row.difficulty, row.question, row.correct_answer,
+                     row.incorrect_answer_1, row.incorrect_answer_2, row.incorrect_answer_3)
+                    )
 
 
 @get_database
@@ -79,11 +81,13 @@ def update_table_users(players, cur):
     """Met à jour la table questions à partir des joueurs"""
 
     for player in players:
-        result = cur.execute("""SELECT * FROM Users WHERE username = ?""", player)
+        result = cur.execute(
+            """SELECT * FROM Users WHERE username = ?""", player)
 
         # Insère un nouveau joueur dans la table
         if len(result) == 0:
-            cur.execute("""INSERT INTO Questions (username, games, wins) VALUES (?, ?, ?)""", player, 1, 0)
+            cur.execute(
+                """INSERT INTO Questions (username, games, wins) VALUES (?, ?, ?)""", player, 1, 0)
 
         # Met à jour un joueur présent dans la table
         else:
@@ -96,13 +100,14 @@ def read_table(category, ids_used, cur):
     Requete la table questions pour obtenir une ligne de question pas encore obtenue sur un thème spécifique.
     category = str | ids_used = list of int
     """
-    
+
     if len(ids_used) == 0:
         query = "SELECT * FROM Questions WHERE category = ? ORDER BY Random() LIMIT 1"
         args = (category,)
-    
+
     else:
-        qm = ", ".join("?" * len(ids_used)) # Crée le nombre de ? nécessaires correspondant au nombre d'id déjà utilisés
+        # Crée le nombre de ? nécessaires correspondant au nombre d'id déjà utilisés
+        qm = ", ".join("?" * len(ids_used))
         query = f"SELECT * FROM Questions WHERE category = ? AND id NOT IN ({qm}) ORDER BY Random() LIMIT 1"
         args = (category, *ids_used)
 
