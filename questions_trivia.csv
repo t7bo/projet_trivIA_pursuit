@@ -1,0 +1,68 @@
+index,category,difficulty,question,correct_answer,incorrect_answer_1,incorrect_answer_2,incorrect_answer_3
+1,python,Facile,Guido van Rossum in 1991 designed which language?,Python,JavaScript,Java,C++
+2,python,Facile,Quel mot-clé est utilisé pour définir une fonction en Python?,def,function,def,fun
+3,actu_ia,Facile,Quel CEO a récemment réintegré ses fonctions au sein de son entreprise ?,Sam Altman,Sundar Pichai,Susan Wojcicki,Mark Cutifani
+4,sql,Moyenne,Quelle est la différence entre INNER JOIN et LEFT JOIN en SQL ?,INNER JOIN renvoie uniquement les lignes ayant des correspondances dans les deux tables,tandis que LEFT JOIN renvoie toutes les lignes de la table à gauche et les lignes correspondantes de la table à droite.,INNER JOIN renvoie toutes les lignes de la table à gauche et les lignes correspondantes de la table à droite.,LEFT JOIN renvoie uniquement les lignes ayant des correspondances dans les deux tables.
+5,sql,Moyenne,Comment supprimer toutes les lignes d'une table sans supprimer la table elle-même ?,DELETE FROM nom_table;,REMOVE FROM nom_table;,DROP FROM nom_table;,TRUNCATE nom_table;
+6,sql,Moyenne,Quelle fonction SQL est utilisée pour trouver le nombre total de lignes dans une table ?,SELECT COUNT(*) FROM nom_table;,SELECT TOTAL_ROWS(nom_table) FROM nom_table;,COUNT(nom_table);,SUM_ROWS(nom_table);
+7,sql,Moyenne,Comment trier les résultats d'une requête par ordre décroissant ?,ORDER BY nom_colonne DESC;,SORT DESC nom_colonne;,ARRANGE nom_colonne DESC;,DESC nom_colonne ORDER BY;
+8,sql,Moyenne,Comment ajouter une nouvelle colonne à une table existante ?,ALTER TABLE nom_table ADD nom_colonne type_de_données;,UPDATE TABLE nom_table SET nom_colonne = type_de_données;,ADD COLUMN nom_table nom_colonne type_de_données;,INSERT INTO nom_table (nom_colonne) VALUES (type_de_données);
+9,actu_ia,Moyenne,Quelles avancées récentes ont été réalisées dans le domaine du traitement du langage naturel ?,Les récentes avancées dans le traitement du langage naturel incluent des modèles tels que GPT-3 et BERT.,Les robots deviennent plus intelligents.,Le langage naturel est difficile à comprendre pour les machines.,Les ordinateurs ne peuvent pas comprendre le contexte du langage naturel.
+10,actu_ia,Moyenne,Quelles entreprises ont récemment annoncé des progrès significatifs dans le domaine de la vision par ordinateur ?,Des entreprises comme Google Microsoft et Tesla ont récemment annoncé des progrès significatifs dans la vision par ordinateur.,Les entreprises ne s'intéressent pas à la vision par ordinateur.,La vision par ordinateur n'est pas une technologie en développement.,Les entreprises technologiques ne s'investissent pas dans la recherche en vision par ordinateur.
+11,actu_ia,Moyenne,Comment l'IA est-elle utilisée pour résoudre des problèmes complexes tels que la prédiction des catastrophes naturelles ?,L'IA est utilisée pour analyser de grandes quantités de données afin de prédire les catastrophes naturelles et d'améliorer la préparation.,L'IA ne peut pas être utilisée pour prédire les catastrophes naturelles.,La prédiction des catastrophes naturelles ne nécessite pas l'utilisation de l'IA.,Les prédictions des catastrophes naturelles sont toujours imprécises.
+12,actu_ia,Moyenne,Quelles préoccupations éthiques ont été soulevées récemment concernant l'utilisation de l'IA dans divers secteurs ?,Des préoccupations éthiques concernant la confidentialité des données la discrimination et la transparence ont été soulevées dans l'IA.,Il n'y a pas de préoccupations éthiques liées à l'IA.,Les préoccupations éthiques ne sont pas pertinentes pour l'IA.,L'éthique ne devrait pas être un facteur dans le développement de l'IA.
+13,actu_ia,Moyenne,Quelles applications innovantes de l'IA ont été développées pour améliorer la santé humaine ?,Des applications telles que la détection précoce des maladies la personnalisation des traitements et la gestion des dossiers médicaux ont été développées grâce à l'IA.,L'IA n'a aucune application dans le domaine de la santé humaine.,Les applications de l'IA dans la santé sont inutiles.,Les professionnels de la santé ne font pas confiance à l'IA.
+14,terminal,Moyenne,Quelle commande permet de lister tous les fichiers d'un répertoire ?,ls,dir,list,show
+15,terminal,Moyenne,Quelle commande change le répertoire de travail ?,cd,switch,wd,dir
+16,terminal,Moyenne,Comment créer un nouveau répertoire ?,mkdir,newdir,create,add
+17,terminal,Moyenne,Quelle commande copie un fichier d'un endroit à un autre ?,cp,mv,copy,move
+18,terminal,Moyenne,Comment afficher le contenu d'un fichier texte ?,cat,display,show,print
+19,git,Moyenne,Comment cloner un référentiel distant avec Git ?,git clone,git pull,git copy,git fetch
+20,git,Moyenne,Quelle commande permet de créer une nouvelle branche dans Git ?,git branch,git create,git new-branch,git make-branch
+21,git,Moyenne,Comment annuler le dernier commit dans Git sans perdre les modifications ?,git reset --soft HEAD^,git revert,git reset --hard HEAD^,git cancel commit
+22,git,Moyenne,Quelle commande fusionne une branche dans Git ?,git merge,git combine,git join,git branch
+23,git,Moyenne,Comment créer une demande de tirage (pull request) sur GitHub ?,Créer une branche et soumettre une pull request,git push origin feature-branch,git request-pull,git submit-pull-request
+24,python,Moyenne,Quelle est la fonction utilisée pour obtenir la longueur d'une liste en Python ?,len,length,getSize,count
+25,python,Moyenne,Comment ouvrir un fichier en mode écriture ('write') en Python ?,open('filename' 'w'),file.open('filename'  'write'),read('filename' 'w'),write('filename' 'r')
+26,python,Moyenne,Quelle est la méthode pour ajouter un élément à la fin d'une liste en Python ?,append(),add(),insert(),extend()
+27,python,Moyenne,Comment définir une fonction en Python ?,def ma_fonction():,function ma_fonction():,define ma_fonction():,create ma_fonction()
+28,python,Moyenne,Quelle est la différence entre les tuples et les listes en Python ?,Les tuples sont immuables,Les listes sont immuables,Les tuples peuvent être modifiés,Les listes sont plus rapides que les tuples
+29,soft_skills,Moyenne,Qu'est-ce que l'intelligence émotionnelle ?,La capacité de comprendre et gérer ses propres émotions et celles des autres.,La capacité de résoudre des problèmes complexes.,La capacité de mémoriser rapidement des informations.,La capacité de calculer mentalement des équations difficiles
+30,soft_skills,Moyenne,Que signifie la communication assertive ?,S'exprimer de manière directe honnête et respectueuse.,Éviter les conversations difficiles.,Être trop critique envers les autres.,Hésiter et ne pas exprimer clairement ses opinions
+31,soft_skills,Moyenne,Comment favoriser la diversité et l'inclusion au travail ?,Promouvoir un environnement accueillant pour toutes les personnes quel que soit leur origine.,Favoriser l'exclusion des opinions divergentes.,Ignorer les différences culturelles.,Privilégier un seul type de profil
+32,soft_skills,Moyenne,Qu'est-ce que la gestion du temps ?,L'efficacité dans l'utilisation du temps disponible.,Le report constant des tâches à accomplir.,L'abandon des délais.,Le travail excessif sans pause
+33,soft_skills,Moyenne,Quelle est l'importance de la rétroaction constructive ?,Elle permet d'améliorer les performances et favorise la croissance professionnelle.,Elle crée un environnement de travail hostile.,Elle décourage les efforts individuels.,Elle est inutile dans un contexte professionnel
+34,terminal,Moyenne,Comment retourner sur le répertoire que l'on vient de quitter ?,cd -,cd back,cd retour_en_arriere,cd -b
+35,terminal,Moyenne,Quelles sont les commandes qui permettent d'editer un fichier ?,vim ou emacs,edit ou write,pls ou sos,cat ou dog
+36,terminal,Moyenne,Comment avoir la doc sur une commande shell ?,man,doc,google,chat GPT
+37,terminal,Moyenne,Comment faire une recherche sur mot dans plusieurs fichiers ?,grep -nriI leMotAchercher,find -a leMotAchercher,ctrl + f leMotAchercher,search leMotAchercher
+38,terminal,Facile,Comment se deplacer vers le repertoire parent ?,cd ..,cd parent,cd back,cd -
+39,terminal,Facile,Quelle sont les couleurs originelles d'écriture dans un terminal ?,blanc sur fond noir,vers sur fond noir (comme dans matrix),noir sur fond blanc,rouge sur fond rouge
+40,terminal,Facile,Comment tout supprimer ?,rm -rf,delete all,alt + f4,del -all
+41,terminal,Facile,Comment trouver un fichier via son nom ?,find,search,grep,file
+42,terminal,Difficile,Quelle est le but du fichier .bashrc ?,Executer des scripts dans un terminal,optimiser le temps d'éxécution d'un programme,il éxécute des programme codé en Bash,Faire du café
+43,sql,Moyenne,Quelle est le système de BDD le plus utilisé ?,MySQL,Oracle,PostgreSQL,Mongo DB
+44,sql,Facile,"Que fait ""select * from ... "" dans une requette SQL ?",elle affiche toutes les colones d'une ou plusieurs tables,Elle affiche tout,Elle affiche les * de la table,Elle selectionne une table pour lui faire des traitements ultérieurs
+45,sql,Facile,Que veut dire SQL ?,Structured Query Language,System of Quantity Linear,Sofisticate Quality Layer,Suposed Question Limited
+46,sql,Facile,Quelle clause SQL est utilisée pour regrouper les résultats d'une requête SELECT ?,Group by,Order By,Having,All
+47,soft_skills,Moyenne,Quelle soft skill favorise l'adaptabilité aux changements dans le domaine technologique ?,Résolution de problèmes,Gestion du stress,Esprit d'équipe,Prise de risque
+48,soft_skills,Moyenne,Quelle soft skill est essentielle pour établir des relations professionnelles solides dans le secteur technologique ?,Networking,Gestion du temps,Résolution de conflits,Communication
+49,soft_skills,Facile,Quelle compétence est importante pour gérer efficacement les priorités dans les projets technologiques ?,Gestion du temps,Collaboration,Leadership,Créativité
+50,soft_skills,Difficile,Quelle compétence favorise la création d'un environnement inclusif dans les équipes technologiques ?,Ecoute active,Leadership,Analyse critique,Prise de décision
+51,soft_skills,Difficile,Quelle compétence est cruciale pour encourager l'innovation au sein des équipes technologiques ?,Pensée créative,Autonomie,Collaboration,Analyse de données
+52,soft_skills,Difficile,Quelle compétence est importante pour gérer le stress lors de situations critiques en technologie ?,Résilience,Flexibilité,Gestion du temps,Esprit d'équipe
+53,python,Moyenne,Quel est le résultat de 2 ** 3 en Python ?,8,6,5,12
+54,python,Moyenne,Quelle méthode est utilisée pour supprimer le dernier élément d'une liste en Python ?,pop(),remove(),delete(),erase()
+55,python,Moyenne,Quel opérateur est utilisé pour la concaténation de chaînes de caractères en Python ?,+,&,*,||
+56,python,Facile,Comment déclare-t-on une variable en Python sans assigner de valeur initiale ?,en utilisant le nom de la variable,None(),Null(),Empty()
+57,python,Facile,Comment démarre un commentaire sur une seule ligne en Python ?,#,//,/*,---
+58,python,Facile,Quelle méthode permet de renverser l'ordre des éléments d'une liste en Python ?,reverse(),invert(),flip(),backward()
+59,python,Facile,Quelle fonction est utilisée pour convertir une chaîne de caractères en majuscules en Python ?,upper(),to_upper(),capitalize(),make_upper()
+60,git,Facile,Comment supprimer les modification local d'un fichier ?,git checkout,git delete,git out,rm -rf
+61,git,Facile,Quelles est le bon ordre pour push ces modifications ?,"git pull, git add, git commit, git push","git add, git commit, git push, git pull","git pull, git commit, git add, git push","git pull, git status, git add, git commit"
+62,git,Facile,Quelle commande permet d'afficher toutes les branches ?,git branch -a,git branch -all,git all branch,git print branch
+63,git,Difficile,"Quelle est l'origine du nom ""git"" ?","c'est de l'argo britanique pour dire ""connard""",Gather Integrate Track,Gestion of Information Traceable,Ce sont les initiales de son inventeur: George Irving Thompson
+64,actu_ia,Moyenne,Quelle institution a récemment publié un rapport sur l'éthique de l'IA et son impact sur la vie privée ?,Commission européenne, Nations Unies,Organisation mondiale de la santé,FMI
+65,actu_ia,Facile,Quelle entreprise a récemment annoncé des progrès significatifs dans la création d'une IA auto-apprenante ?,OpenAI,Tesla,IBM,Facebook
+66,actu_ia,Difficile,Quel chercheur en IA a récemment reçu une reconnaissance mondiale pour ses travaux sur l'éthique de l'IA ?,Yoshua Bengio,Geoffrey Hinton,Andrew Ng,Fei-Fei Li
+67,actu_ia,Difficile,Quel organisme régulateur a récemment émis des directives sur l'utilisation éthique de l'IA dans les domaines de la santé ?,FDA (Food and Drug Administration),CDC (Centers for Disease Control and Prevention),OMS (Organisation mondiale de la santé),EMA (European Medicines Agency)
